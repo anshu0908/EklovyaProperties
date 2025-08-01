@@ -8,7 +8,7 @@ const Footer = () => {
         
         <div>
           <div className="text-2xl font-semibold items-center space-x-2 mb-4">
-            Eklovya Properties
+            Eklovya Property
           </div>
           <h2 className="text-md mb-4">
              EP dedicated to revolutionizing the real estate experience. Through innovation and excellence.

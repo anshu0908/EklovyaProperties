@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-wrap min-h-[400px] md:h-[30vw] justify-center items-start mt-12 gap-8 p-4 sm:p-6">
+    <div className="flex flex-wrap min-h-[400px] md:h-[30vw] justify-center items-start mt-2  gap-8 p-4 sm:p-6">
       
       <div className="flex flex-col md:flex-row bg-gray-100 rounded-xl overflow-hidden shadow-md w-full max-w-4xl">
         <img
