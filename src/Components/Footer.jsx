@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         <div className="hidden md:block">
-          {/* Empty column preserved for layout balance on larger screens */}
+          
         </div>
 
         <div>
