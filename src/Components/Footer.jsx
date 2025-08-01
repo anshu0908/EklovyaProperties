@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='pl-10'>
+        <div className='md:pl-10'>
           <h3 className="font-semibold text-lg mb-3">Pages</h3>
           <div className="space-y-2 text-md">
             <h2>Home</h2>
