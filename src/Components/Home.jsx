@@ -8,8 +8,8 @@ const Home = () => {
     >
       <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="relative z-10 text-white max-w-4xl text-left px-2">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold leading-snug md:leading-tight">
+      <div className="relative z-10 text-white max-w-4xl text-left md:px-2">
+        <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold leading-snug md:leading-tight">
           Find the <span className="text-white">right and best</span> <br />
           home for your family
         </h1>
