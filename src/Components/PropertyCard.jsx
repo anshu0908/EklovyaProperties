@@ -21,10 +21,10 @@ const PropertyCard = ({ property }) => {
         <h3 className="text-base sm:text-lg font-semibold mb-1">
           {property.title}
         </h3>
-        <p className="text-sm text-gray-500 flex items-center flex-wrap">
+        <h2 className="text-sm text-gray-500 flex items-center flex-wrap">
           <FaMapMarkerAlt className="mr-2" />
           {property.location}
-        </p>
+        </h2>
       </div>
     </div>
   );

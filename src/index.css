@@ -5,9 +5,18 @@
     font-family: 'Gilroy';
     src: url('/Gilroy-Regular.ttf') format('truetype');
 }
-@import "tailwindcss";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Medium.ttf') format('truetype');
+}
+
+@import "tailwindcss"; 
 
 
 body{
     font-family: "Gilroy";
+}
+
+h2{
+    font-weight: 400;
 }

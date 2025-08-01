@@ -34,23 +34,23 @@ const Home = () => {
 
          
           <div className="flex flex-wrap md:flex-nowrap gap-3 justify-between w-full md:w-auto">
-            <button className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
+            <h2 className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
               <FaHome className="text-gray-500" />
               Properties
               <span className="text-xs">▼</span>
-            </button>
+            </h2>
 
-            <button className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
+            <h2 className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
               <FaMapMarkerAlt className="text-gray-500" />
               Location
               <span className="text-xs">▼</span>
-            </button>
+            </h2>
 
-            <button className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
+            <h2 className="flex items-center gap-2 border px-4 py-2 rounded-full text-gray-700 hover:bg-gray-100 transition w-full md:w-auto justify-center">
               <FaFilter className="text-gray-500" />
               Types
               <span className="text-xs">▼</span>
-            </button>
+            </h2>
           </div>
         </div>
       </div>

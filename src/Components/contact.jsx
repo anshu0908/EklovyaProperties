@@ -27,13 +27,13 @@ const Contact = () => {
 
       
       <div className="bg-black text-white rounded-xl p-6 sm:p-8 max-w-md w-full shadow-md">
-        <h2 className="text-2xl font-bold mb-4">
+        <h3 className="text-2xl font-bold mb-4">
           Do you still have a <br /> question?
-        </h2>
-        <p className="text-gray-400 mb-6">
+        </h3>
+        <h2 className="text-gray-400 mb-6">
           Have about our expert agents. What specific information are you
           looking for?
-        </p>
+        </h2>
         <button className="bg-white text-black font-medium px-6 py-3 rounded-full hover:bg-gray-200 transition">
           Contact us
         </button>
