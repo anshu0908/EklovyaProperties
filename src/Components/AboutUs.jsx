@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="bg-black text-white px-4 md:px-6 py-16 md:py-20 mt-10">
       
       <div className="max-w-6xl mx-auto text-center md:text-left">
-        <h2 className="text-xl md:text-3xl font-semibold mb-6 md:mb-8">About us</h2>
+        <h2 className="text-xl md:text-6xl font-bold mb-6 md:mb-8">About us</h2>
         <p className="text-2xl md:text-5xl font-semibold leading-snug">
           Our mission is simple, to provide unparalleled expertise, guidance,
           and support to our clients across their real estate journey.

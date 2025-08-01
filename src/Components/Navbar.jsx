@@ -21,8 +21,8 @@ const Navbar = () => {
         
         <div className="flex items-center gap-4 md:gap-6 text-sm md:text-base">
           <FaUser className="text-white text-lg cursor-pointer hover:text-gray-300" />
-
-          <button className="text-white border md:block hidden border-white px-4 py-1.5 md:px-5 md:py-2 rounded-full font-semibold hover:bg-white hover:text-black transition whitespace-nowrap">
+          
+          <button className="sm:hidden text-white border md:block hidden border-white px-4 py-1.5 md:px-5 md:py-2 rounded-full font-semibold hover:bg-white hover:text-black transition whitespace-nowrap">
             Contact Us
           </button>
         </div>
