@@ -2,13 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-wrap h-[30vw] justify-center items-start mt-[6vw] gap-8 p-6">
-     
-      <div className="flex bg-gray-100 rounded-xl overflow-hidden shadow-md max-w-4xl w-full">
+    <div className="flex flex-wrap min-h-[400px] md:h-[30vw] justify-center items-start mt-12 gap-8 p-4 sm:p-6">
+      
+      <div className="flex flex-col md:flex-row bg-gray-100 rounded-xl overflow-hidden shadow-md w-full max-w-4xl">
         <img
           src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHx8fDA%3D"
           alt="House with keys"
-          className="w-1/2 object-cover rounded-lg"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-t-lg md:rounded-l-lg md:rounded-tr-none"
         />
         <div className="p-6 flex flex-col justify-between">
           <div>
@@ -26,7 +26,7 @@ const Contact = () => {
       </div>
 
       
-      <div className="bg-black text-white rounded-xl mt-6 p-8 max-w-md w-full shadow-md">
+      <div className="bg-black text-white rounded-xl p-6 sm:p-8 max-w-md w-full shadow-md">
         <h2 className="text-2xl font-bold mb-4">
           Do you still have a <br /> question?
         </h2>

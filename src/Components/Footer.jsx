@@ -3,11 +3,11 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-800 px-8 py-12 border-t">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-       
+    <footer className="bg-white text-gray-800 px-4 sm:px-6 md:px-8 py-10 sm:py-12 border-t">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        
         <div>
-          <div className="text-2xl  font-semibold items-center space-x-2 mb-4">
+          <div className="text-2xl font-semibold items-center space-x-2 mb-4">
             Eklovya Properties
           </div>
           <p className="text-sm mb-4">
@@ -19,7 +19,6 @@ const Footer = () => {
             <FaXTwitter />
             <FaLinkedinIn />
           </div>
-          
         </div>
 
         <div>
@@ -28,17 +27,13 @@ const Footer = () => {
             <li>Home</li>
             <li>About Us</li>
             <li>Properties</li>
-            
-            
           </ul>
         </div>
 
-       
-        <div>
-          
+        <div className="hidden md:block">
+          {/* Empty column preserved for layout balance on larger screens */}
         </div>
 
-       
         <div>
           <h3 className="font-semibold mb-3">Contact</h3>
           <ul className="space-y-2 text-sm">
@@ -46,16 +41,14 @@ const Footer = () => {
             <li>eklovyagauba94@gmail.com</li>
             <li>
               Lorem ipsum dolor sit amet, <br />
-              consectetur adipisicing elit. 
+              consectetur adipisicing elit.
             </li>
           </ul>
         </div>
       </div>
 
-
-      <div className="border-t mt-10 pt-6 text-sm text-gray-600 flex justify-between items-center max-w-7xl mx-auto">
+      <div className="border-t mt-10 pt-6 text-sm text-gray-600 flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto gap-4 text-center sm:text-left">
         <p>© All rights reserved.</p>
-        
       </div>
     </footer>
   );
