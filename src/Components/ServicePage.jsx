@@ -71,7 +71,7 @@ const ServicePage = () => {
           <img
             src="https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png"
             alt="Model Building"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover md:block hidden"
             />
         </div>
       </div>
