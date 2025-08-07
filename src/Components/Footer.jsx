@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
   return (
     <div className="bg-white text-gray-800 px-4 sm:px-6 md:px-8 py-10 sm:py-12 border-t">
@@ -35,7 +36,7 @@ const Footer = () => {
         <div className="space-y-2 flex flex-col text-md">
           <h3 className="font-semibold text-lg mb-3 invisible">Blank</h3>
           <Link to="/services">Services</Link>
-          <Link to="/privacypolicy">Privacy Policy</Link>
+         <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
 
        

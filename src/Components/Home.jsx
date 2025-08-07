@@ -68,7 +68,6 @@ const Home = () => {
       <Sectors/>
       <FAQ/>
       <Contact/>
-      <PrivacyPolicy/>
     </>
   );
 };
