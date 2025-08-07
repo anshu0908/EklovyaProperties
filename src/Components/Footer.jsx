@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -7,10 +8,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-10">
 
         
-        <div className='col-span-2 text-lg'>
-          <div className="text-2xl font-semibold mb-4">
-            Eklovya Property
-          </div>
+        <div className="col-span-2 text-lg">
+          <div className="text-2xl font-semibold mb-4">Eklovya Property</div>
           <h2 className="text-md mb-4">
             EP dedicated to revolutionizing the real estate experience. Through innovation and excellence.
           </h2>
@@ -22,40 +21,41 @@ const Footer = () => {
           </div>
         </div>
 
-    
         
         <div>
           <h3 className="font-semibold text-lg mb-3">Pages</h3>
-          <div className="space-y-2 text-md">
-            <h2>Home</h2>
-            <h2>About Us</h2>
-            <h2>Properties</h2>
+          <div className="space-y-2 text-md flex flex-col">
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/properties">Properties</Link>
           </div>
         </div>
 
-    <div className='Blank Div space-y-2 text-md'>
-      <h3><br /></h3>
-            <h2>Services</h2>
-            <h2>Privacy Policy</h2>
-     </div>
+       
+        <div className="space-y-2 flex flex-col text-md">
+          <h3 className="font-semibold text-lg mb-3 invisible">Blank</h3>
+          <Link to="/services">Services</Link>
+          <Link to="/privacypolicy">Privacy Policy</Link>
+        </div>
+
        
         <div>
           <h3 className="font-semibold text-lg mb-3">Contact</h3>
           <div className="space-y-2 text-md">
             <h2>(+91) 98xxxxxx42</h2>
             <h2>eklovyagauba94@gmail.com</h2>
-            <h2 className='whitespace-nowrap'>
+            <h2 className="whitespace-nowrap">
               Lorem ipsum dolor sit amet, <br />
               consectetur adipisicing elit.
             </h2>
           </div>
         </div>
 
-        
+       
         <div className="hidden md:block" />
       </div>
 
-     
+      
       <div className="border-t mt-10 pt-6 text-sm text-gray-600 flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto gap-4 text-center sm:text-left">
         <h2>© All rights reserved.</h2>
       </div>

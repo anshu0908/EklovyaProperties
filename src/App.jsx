@@ -1,17 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from './Components/Navbar';
-import Home from './Components/Home';
-import Footer from './Components/Footer';
-import PrivacyPolicy from './Components/PrivacyPolicy';
-  
-import AboutPage from './Components/AboutPage';
-import ServicePage from './Components/ServicePage';
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import Footer from "./Components/Footer";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+
+import AboutPage from "./Pages/AboutPage";
+import ServicePage from "./Pages/ServicePage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
+      <ScrollToTopp />
       <Navbar />
 
       <Routes>
@@ -19,11 +21,10 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          
       </Routes>
 
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 };
 
