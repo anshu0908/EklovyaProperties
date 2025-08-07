@@ -1,8 +1,14 @@
 import React from 'react';
 import { FaFilter, FaHome, FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
+import Properties from './Properties';
+import FAQ from './FAQ';
+import AboutUs from './AboutUs';
+import Contact from './contact';
+import Sectors from './SectorCard';
 
 const Home = () => {
   return (
+    <>
     <div
       className="relative h-[48vw] min-h-[500px] bg-cover bg-center bg-no-repeat bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')] w-full flex items-center justify-center px-4 sm:px-6"
     >
@@ -54,7 +60,14 @@ const Home = () => {
           </div>
         </div>
       </div>
+
     </div>
+      <Properties/>
+      <AboutUs/>
+      <Sectors/>
+      <FAQ/>
+      <Contact/>
+    </>
   );
 };
 

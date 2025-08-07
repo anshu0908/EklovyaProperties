@@ -10,7 +10,7 @@ const Contact = () => {
           className="w-full lg:w-1/2 h-64 lg:h-auto object-cover"
         />
         <div className="p-6 flex flex-col justify-between">
-          <span className="inline-block bg-white text-sm font-semibold text-gray-600 px-3 py-1 rounded-full mb-4">
+          <span className=" w-fit bg-white text-sm font-semibold text-gray-600 px-3 py-1 rounded-full mb-4">
             Selling
           </span>
           <h2 className="text-2xl font-bold text-gray-900 leading-snug">

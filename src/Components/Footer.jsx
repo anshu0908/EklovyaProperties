@@ -4,10 +4,10 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from 'react-icons/
 const Footer = () => {
   return (
     <div className="bg-white text-gray-800 px-4 sm:px-6 md:px-8 py-10 sm:py-12 border-t">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-10">
 
         
-        <div>
+        <div className='col-span-2 text-lg'>
           <div className="text-2xl font-semibold mb-4">
             Eklovya Property
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </div>
 
-      <div></div>
+    
         
         <div>
           <h3 className="font-semibold text-lg mb-3">Pages</h3>
@@ -33,14 +33,18 @@ const Footer = () => {
           </div>
         </div>
 
-     <div></div>
+    <div className='Blank Div space-y-2 text-md'>
+      <h3><br /></h3>
+            <h2>Services</h2>
+            <h2>Privacy Policy</h2>
+     </div>
        
         <div>
           <h3 className="font-semibold text-lg mb-3">Contact</h3>
           <div className="space-y-2 text-md">
             <h2>(+91) 98xxxxxx42</h2>
             <h2>eklovyagauba94@gmail.com</h2>
-            <h2>
+            <h2 className='whitespace-nowrap'>
               Lorem ipsum dolor sit amet, <br />
               consectetur adipisicing elit.
             </h2>

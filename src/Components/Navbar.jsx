@@ -1,4 +1,7 @@
-import { FaUser } from 'react-icons/fa';
+import { FaUser} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { IoMenu } from 'react-icons/io5';
+
 
 const Navbar = () => {
   return (
@@ -6,17 +9,21 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-6 md:px-10 py-4 md:py-6 flex-wrap">
         
         
-        <div className="flex items-center gap-2 text-white text-lg md:text-xl font-semibold mb-2 md:mb-0">
-          <div className="w-6 h-6 bg-white rounded-sm"></div>
+        <Link to={'/'} className="flex items-center gap-2 text-white text-lg md:text-xl font-semibold mb-2 md:mb-0">
+     
           Eklovya Property
-        </div>
+        </Link>
 
        
-        <div className="hidden md:flex items-center gap-10 text-white text-base md:text-lg font-medium">
-          <h2 href="#" className="hover:text-gray-300 transition">Home</h2>
-          <h2 href="#" className="hover:text-gray-300 transition">About</h2>
-          <h2 href="#" className="hover:text-gray-300 transition">Properties</h2>
-        </div>
+       <div className=" ">
+      <ul className="md:flex hidden gap-6 text-white text-xl">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/Properties">Properties</Link></li>
+       
+      </ul>
+    </div>
 
         
         <div className="flex items-center gap-4 md:gap-6 text-sm md:text-base">
@@ -25,6 +32,7 @@ const Navbar = () => {
           <button className="sm:hidden text-white border md:block hidden border-white px-4 py-1.5 md:px-5 md:py-2 rounded-full font-semibold hover:bg-white hover:text-black transition whitespace-nowrap">
             Contact Us
           </button>
+          <IoMenu className="text-white text-2xl md:hidden" />
         </div>
       </div>
     </div>

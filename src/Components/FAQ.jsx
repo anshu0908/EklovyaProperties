@@ -48,7 +48,7 @@ const GeneralFAQ = () => {
 
   return (
     <div className="max-w-4xl mx-auto text-center mt-6 px-4 sm:px-6 py-10">
-      <h3 className="text-4xl font-bold mb-14">General question</h3>
+      <h3 className="text-4xl font-bold mb-14">FAQ's</h3>
 
       {generalFAQs.map((item, index) => (
         <div

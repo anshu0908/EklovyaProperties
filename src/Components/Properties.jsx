@@ -10,7 +10,7 @@ const properties = [
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
   },
   {
-    type: "Sale",
+    type: "For Sale",
     price: "₹85 Lakh",
     title: "Sushant Lok Villa",
     location: "Sushant Lok 1, Sector 43, Gurugram",
@@ -31,7 +31,7 @@ const properties = [
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
   },
   {
-    type: "Sale",
+    type: " For Sale",
     price: "₹85 Lakh",
     title: "Sushant Lok Villa",
     location: "Sushant Lok 1, Sector 43, Gurugram",
@@ -55,7 +55,7 @@ const Properties = () => {
         <h3 className="text-3xl sm:text-4xl font-bold">
           Popular <span className=""> properties </span>
         </h3>
-        <button className="text-sm font-semibold flex items-center gap-2">
+        <button className="hidden text-sm font-semibold md:flex md:mr-18 items-center gap-2">
           View All <span className="text-lg">→</span>
         </button>
       </div>
