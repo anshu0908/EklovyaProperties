@@ -5,6 +5,7 @@ import FAQ from './FAQ';
 import AboutUs from './AboutUs';
 import Contact from './contact';
 import Sectors from './SectorCard';
+import PrivacyPolicy from '../Pages/PrivacyPolicy';
 
 const Home = () => {
   return (
@@ -67,6 +68,7 @@ const Home = () => {
       <Sectors/>
       <FAQ/>
       <Contact/>
+      <PrivacyPolicy/>
     </>
   );
 };

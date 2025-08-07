@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
@@ -13,7 +13,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTopp />
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
