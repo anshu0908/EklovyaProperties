@@ -38,27 +38,19 @@ const sectors = [
   },
 ];
 
-const SectorCard = ({ name, description, image }) => {
-  const [hovered, setHovered] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+const SectorCard = ({ index, name, description, image, activeIndex, setActiveIndex, isMobile }) => {
+  const hovered = activeIndex === index;
 
   const handleClick = () => {
     if (isMobile) {
-      setHovered((prev) => !prev);
+      setActiveIndex(hovered ? null : index);
     }
   };
 
   return (
     <div
-      onMouseEnter={() => !isMobile && setHovered(true)}
-      onMouseLeave={() => !isMobile && setHovered(false)}
+      onMouseEnter={() => !isMobile && setActiveIndex(index)}
+      onMouseLeave={() => !isMobile && setActiveIndex(null)}
       onClick={handleClick}
       className="relative bg-gray-100 p-6 sm:p-6 md:p-10 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-4 sm:gap-6 transition-all duration-300 cursor-pointer"
     >
@@ -100,6 +92,16 @@ const SectorCard = ({ name, description, image }) => {
 };
 
 const Sectors = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section className="max-w-6xl mx-auto px-4 py-16 space-y-10">
       <div className="text-center space-y-4 px-2 sm:px-6">
@@ -117,9 +119,13 @@ const Sectors = () => {
         {sectors.map((sector, index) => (
           <SectorCard
             key={index}
+            index={index}
             name={sector.name}
             description={sector.description}
             image={sector.image}
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+            isMobile={isMobile}
           />
         ))}
       </div>
