@@ -30,11 +30,11 @@ const Contact = () => {
         <p className="text-gray-400 mb-6">
           Ask our expert agents. What specific information are you looking for?
         </p>
-       <Link
-  to="/contact"
-  className="sm:hidden text-white border md:block hidden border-white px-4 py-1.5 md:px-5 md:py-2 rounded-full font-semibold hover:bg-white hover:text-black transition whitespace-nowrap">
-  Contact Us
-</Link>
+          <Link
+            to="/contact"
+            className="border border-white px-4 py-2 rounded-full text-center hover:bg-white hover:text-black transition" >
+            Contact Us
+          </Link>
       </div>
     </div>
   );

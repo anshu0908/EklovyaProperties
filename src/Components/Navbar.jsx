@@ -67,8 +67,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="border border-white px-4 py-2 rounded-full text-center hover:bg-white hover:text-black transition"
-          >
+            className="border border-white px-4 py-2 rounded-full text-center hover:bg-white hover:text-black transition" >
             Contact Us
           </Link>
         </div>

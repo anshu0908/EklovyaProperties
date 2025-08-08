@@ -46,7 +46,7 @@ const ContactUsPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="w-full h-[60vw] md:h-[40vw] bg-cover bg-center relative flex items-center bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')]">
+      <div className="w-full h-[68vw] md:h-[40vw] bg-cover bg-center relative flex items-center bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')]">
         <div className="absolute z-20 top-[40%] left-[8%] text-white">
           <p className="text-sm sm:text-md md:text-lg font-light mb-2">
             Home / Contact Us
