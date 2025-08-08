@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <div className="text-white">
       
       <div
-        className="w-full h-[50vw] md:h-[40vw] bg-cover bg-center relative flex items-center bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')]"
+        className="w-full pt-16 h-[55vw] md:h-[40vw] bg-cover bg-center relative flex items-center bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')]"
       >
         <div className="relative z-10 max-w-6xl px-6 sm:px-8 text-white">
           <p className="text-sm sm:text-lg mb-2">Home / Privacy Policy</p>
