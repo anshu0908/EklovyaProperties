@@ -83,8 +83,8 @@ const SectorCard = ({ index, name, description, image, activeIndex, setActiveInd
       </div>
 
       <div
-        className={`absolute bottom-3 left-1/2 transform -translate-x-1/2 h-0.5 bg-black transition-all duration-300 ${
-          hovered ? "w-[60%] sm:w-[70%] md:w-[80%] opacity-100" : "w-0 opacity-0"
+        className={`absolute bottom-3 left-1/2 transform -translate-x-1/2 h-[2px] bg-black transition-all duration-300 ${
+          hovered ? "w-[80%] opacity-100" : "w-0 opacity-0"
         }`}
       />
     </div>
