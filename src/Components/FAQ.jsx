@@ -174,7 +174,7 @@ const FAQ = () => {
                 openIndex === index ? 'max-h-40 mt-3' : 'max-h-0'
               }`}
             >
-              <p className="text-gray-700 text-sm sm:text-base">{item.answer}</p>
+              <p className="text-gray-700 text-md w-[90%] p-2 text-base">{item.answer}</p>
             </div>
           </div>
         ))}

@@ -6,7 +6,7 @@ const sectors = [
     description:
       "Sector 14 is centrally located in Gurugram, known for its vibrant HUDA market, excellent connectivity, and proximity to schools, hospitals, and commercial hubs.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/28/HUDA_Market_Sector_14_Gurgaon.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpGc-CwVLf4M8H0eAzsVxbeWzG4tUNGSw1A&s",
   },
   {
     name: "Sector 15",
