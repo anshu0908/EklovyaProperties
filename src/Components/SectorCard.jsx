@@ -103,7 +103,7 @@ const Sectors = () => {
   }, []);
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16 space-y-10">
+    <div className="max-w-6xl mx-auto px-4 pt-16 pb-6 space-y-10">
       <div className="text-center space-y-4 px-2 sm:px-6">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           Settle in your dream location
@@ -129,7 +129,7 @@ const Sectors = () => {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
