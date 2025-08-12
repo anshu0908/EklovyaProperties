@@ -10,7 +10,7 @@ const Footer = () => {
 
         
         <div className="col-span-2 text-lg">
-          <div className="text-2xl font-semibold mb-4">Eklovya Property</div>
+          <div className="text-2xl font-semibold mb-4">Eklovya Properties</div>
           <h2 className="text-md mb-4">
             EP dedicated to revolutionizing the real estate experience. Through innovation and excellence.
           </h2>
