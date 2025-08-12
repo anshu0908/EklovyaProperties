@@ -10,6 +10,7 @@ import AboutPage from "./Pages/AboutPage";
 import ServicePage from "./Pages/ServicePage";
 import ScrollToTop from "./Components/ScrollToTop";
 import ContactUsPage from "./Pages/ContactUsPage";
+import ListingPage from "./Pages/ListingPage";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/properties" element={<ListingPage />} />
 
       </Routes>
 
