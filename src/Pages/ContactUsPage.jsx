@@ -77,7 +77,7 @@ const ContactUsPage = () => {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
-            
+           
             <div className="bg-zinc-100 shadow-lg rounded-lg p-4 sm:p-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -129,7 +129,7 @@ const ContactUsPage = () => {
               </form>
             </div>
 
-          
+        
             <div className="space-y-6 lg:ml-10">
               <div>
                 <h4 className="text-xl font-semibold mb-1">Call Us</h4>
@@ -173,7 +173,7 @@ const ContactUsPage = () => {
           </div>
         </div>
 
-       
+        
         <div className="w-full flex justify-center py-8 px-4">
           <div className="w-full sm:w-[80%] md:w-[70%] lg:w-[60%] max-w-4xl rounded-lg shadow-2xl overflow-hidden">
             <iframe
@@ -187,7 +187,6 @@ const ContactUsPage = () => {
           </div>
         </div>
 
-       
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-12">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">
             Frequently Asked Questions
