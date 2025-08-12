@@ -16,28 +16,40 @@ const ContactUsPage = () => {
     alert("Your message has been submitted!");
   };
 
-  const faqData = [
-    {
-      question: "How can I set a realistic budget before buying a home?",
-      answer:
-        "Start by assessing your income, expenses, and debts. Aim to spend no more than 30-40% of your monthly income on housing.",
-    },
-    {
-      question: "Which Gurgaon sectors are best suited for families?",
-      answer:
-        "Sectors like 50, 57, and 70 are well-known for family-friendly amenities, schools, and parks.",
-    },
-    {
-      question: "What documents should I prepare before making a purchase?",
-      answer:
-        "Key documents include your ID proof, address proof, income proof, and bank statements. We can guide you through the checklist.",
-    },
-    {
-      question: "Is property registration a legal requirement?",
-      answer:
-        "Yes, property registration is mandatory to establish legal ownership and is handled through local authorities.",
-    },
-  ];
+  const faqData =  [
+  {
+    question: "How can I book a site visit for a property listed on Eklovya Properties?",
+    answer: "You can fill out the contact form or call our helpline to schedule a visit at your preferred time."
+  },
+  {
+    question: "Do you assist with home loan services?",
+    answer: "Yes, we help connect you with trusted banking partners for easy home loan approvals."
+  },
+  {
+    question: "Are all properties listed verified?",
+    answer: "Every property is verified by our team before being listed to ensure authenticity."
+  },
+  {
+    question: "Can I list my property for sale or rent on Eklovya Properties?",
+    answer: "Absolutely! You can reach out to our team via the contact page to list your property."
+  },
+  {
+    question: "Do you deal in both residential and commercial properties?",
+    answer: "Yes, we specialize in residential, commercial, and investment properties across Gurgaon and nearby areas."
+  },
+  {
+    question: "What areas do you cover?",
+    answer: "We primarily deal in Gurgaon sectors, but also handle select properties in Delhi-NCR."
+  },
+  {
+    question: "How can I get price trends for my preferred location?",
+    answer: "Our team provides detailed market insights and pricing trends upon request."
+  },
+  {
+    question: "Do you provide legal assistance for property transactions?",
+    answer: "Yes, we connect you with experienced legal professionals to ensure smooth documentation and registration."
+  }
+];
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -45,7 +57,7 @@ const ContactUsPage = () => {
 
   return (
     <>
-      {/* Hero Section */}
+      
       <div className="w-full h-[68vw] md:h-[40vw] bg-cover bg-center relative flex items-center bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')]">
         <div className="absolute z-20 top-[40%] left-[8%] text-white">
           <p className="text-sm sm:text-md md:text-lg font-light mb-2">
@@ -57,7 +69,7 @@ const ContactUsPage = () => {
         </div>
       </div>
 
-      {/* Contact Form + Info Section */}
+      
       <div className="text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
           <h2 className="text-3xl sm:text-4xl underline-offset-8 text-center font-bold mb-12 sm:mb-20">
@@ -65,7 +77,7 @@ const ContactUsPage = () => {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
-            {/* Contact Form */}
+            
             <div className="bg-zinc-100 shadow-lg rounded-lg p-4 sm:p-6">
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -117,7 +129,7 @@ const ContactUsPage = () => {
               </form>
             </div>
 
-            {/* Contact Info */}
+          
             <div className="space-y-6 lg:ml-10">
               <div>
                 <h4 className="text-xl font-semibold mb-1">Call Us</h4>
@@ -161,7 +173,7 @@ const ContactUsPage = () => {
           </div>
         </div>
 
-        {/* Google Map */}
+       
         <div className="w-full flex justify-center py-8 px-4">
           <div className="w-full sm:w-[80%] md:w-[70%] lg:w-[60%] max-w-4xl rounded-lg shadow-2xl overflow-hidden">
             <iframe
@@ -175,7 +187,7 @@ const ContactUsPage = () => {
           </div>
         </div>
 
-        {/* FAQ Section */}
+       
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-12">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">
             Frequently Asked Questions
