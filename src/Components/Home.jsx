@@ -6,6 +6,7 @@ import AboutUs from './AboutUs';
 import Contact from './contact';
 import Sectors from './SectorCard';
 import ListingPage from '../Pages/ListingPage';
+import PropertyDetail from '../Pages/PropertyDetail';
 
 
 const Home = () => {
@@ -69,6 +70,7 @@ const Home = () => {
       <Sectors/>
       <FAQ/>
       <Contact/>
+      {/* <PropertyDetail/> */}
     </>
   );
 };
