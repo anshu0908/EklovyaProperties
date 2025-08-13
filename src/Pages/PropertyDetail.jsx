@@ -10,14 +10,14 @@ const photos = [
   "https://images.unsplash.com/photo-1521783988139-893ce881e1b8?q=80&w=1974&auto=format&fit=crop",
 ];
 
+const highlights = [
+  { label: "Freehold", desc: "Ownership with no lease restrictions." },
+  { label: "Loan approved", desc: "Eligible for hassle-free home loans." },
+  { label: "Gated community", desc: "Secure and private neighborhood." },
+  { label: "Near Metro", desc: "Quick access to public transportation." },
+  { label: "Corner plot", desc: "Premium corner-facing property." }
+];
 
-  const highlights = [
-    { label: "Freehold", desc: "Ownership with no lease restrictions." },
-    { label: "Loan approved", desc: "Eligible for hassle-free home loans." },
-    { label: "Gated community", desc: "Secure and private neighborhood." },
-    { label: "Near Metro", desc: "Quick access to public transportation." },
-    { label: "Corner plot", desc: "Premium corner-facing property." }
-  ];
 const amenities = [
   "Modular kitchen",
   "24×7 security",
@@ -32,7 +32,8 @@ const amenities = [
 const PropertyDetail = () => {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
-     
+      
+      
       <section className="relative">
         <div className="relative h-[48vh] md:h-[64vh] w-full overflow-hidden rounded-b-3xl">
           <img
@@ -41,7 +42,7 @@ const PropertyDetail = () => {
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-          <div className="absolute bottom-6 left-6 right-6">
+          <div className="absolute bottom-6 left-4 right-4 md:left-6 md:right-6">
             <div className="max-w-7xl mx-auto flex flex-col gap-3 text-white">
               <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs backdrop-blur">
                 <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
@@ -56,35 +57,26 @@ const PropertyDetail = () => {
       </section>
 
      
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="max-w-7xl mx-auto px-4 lg:px-8 py-8 md:py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
         
         <div className="lg:col-span-2 space-y-8">
+          
          
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="rounded-2xl border bg-white p-4 shadow-sm">
-              <div className="flex items-center gap-2 text-sm text-neutral-500">
-                <Bed className="w-4 h-4" /> Beds
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { icon: <Bed className="w-4 h-4" />, label: "Beds", value: "4" },
+              { icon: <Bath className="w-4 h-4" />, label: "Baths", value: "4" },
+              { icon: <Ruler className="w-4 h-4" />, label: "Area", value: "3,250 sq.ft" },
+              { icon: <Car className="w-4 h-4" />, label: "Parking", value: "2 cars" }
+            ].map((item, idx) => (
+              <div key={idx} className="rounded-2xl border bg-white p-4 shadow-sm">
+                <div className="flex items-center gap-2 text-sm text-neutral-500">
+                  {item.icon} {item.label}
+                </div>
+                <div className="text-2xl font-semibold">{item.value}</div>
               </div>
-              <div className="text-2xl font-semibold">4</div>
-            </div>
-            <div className="rounded-2xl border bg-white p-4 shadow-sm">
-              <div className="flex items-center gap-2 text-sm text-neutral-500">
-                <Bath className="w-4 h-4" /> Baths
-              </div>
-              <div className="text-2xl font-semibold">4</div>
-            </div>
-            <div className="rounded-2xl border bg-white p-4 shadow-sm">
-              <div className="flex items-center gap-2 text-sm text-neutral-500">
-                <Ruler className="w-4 h-4" /> Area
-              </div>
-              <div className="text-2xl font-semibold">3,250 sq.ft</div>
-            </div>
-            <div className="rounded-2xl border bg-white p-4 shadow-sm">
-              <div className="flex items-center gap-2 text-sm text-neutral-500">
-                <Car className="w-4 h-4" /> Parking
-              </div>
-              <div className="text-2xl font-semibold">2 cars</div>
-            </div>
+            ))}
           </div>
 
           
@@ -97,9 +89,9 @@ const PropertyDetail = () => {
               for family evenings. Located minutes from schools, shopping, and metro connectivity.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              {["Freehold", "Loan approved", "Gated community", "Near Metro", "Corner plot"].map((t) => (
-                <span key={t} className="rounded-full border px-3 py-1 text-xs text-neutral-700">
-                  {t}
+              {highlights.map(h => (
+                <span key={h.label} className="rounded-full border px-3 py-1 text-xs text-neutral-700">
+                  {h.label}
                 </span>
               ))}
             </div>
@@ -121,11 +113,11 @@ const PropertyDetail = () => {
             </div>
           </div>
 
-         
+        
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-4">Amenities</h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {amenities.map((a) => (
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              {amenities.map(a => (
                 <li key={a} className="flex items-center gap-2">
                   <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   <span>{a}</span>
@@ -134,7 +126,6 @@ const PropertyDetail = () => {
             </ul>
           </div>
 
-          
           <div className="rounded-2xl border bg-white p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Location</h2>
             <p className="text-neutral-700 mb-3">
@@ -142,28 +133,28 @@ const PropertyDetail = () => {
               a 2–5 km radius. The upcoming RRTS and existing Blue Line Metro enhance city-wide access.
             </p>
             <div className="bg-white rounded-lg shadow-md p-6">
-     
-      <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-3"> Highlights</h3>
-        <div className="flex flex-wrap gap-2">
-          {highlights.map((item, i) => (
-            <div
-              key={i}
-              title={item.desc}
-              className="px-4 py-1.5 text-sm border border-gray-300 rounded-full hover:bg-yellow-100 hover:border-yellow-400 transition cursor-pointer"
-            >
-              {item.label}
+              <div className="mt-4">
+                <h3 className="text-lg font-semibold mb-3">Highlights</h3>
+                <div className="flex flex-wrap gap-2">
+                  {highlights.map((item, i) => (
+                    <div
+                      key={i}
+                      title={item.desc}
+                      className="px-4 py-1.5 text-sm border border-gray-300 rounded-full hover:bg-yellow-100 hover:border-yellow-400 transition cursor-pointer"
+                    >
+                      {item.label}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
           </div>
         </div>
 
-
+        
         <aside className="lg:col-span-1 space-y-6">
           <div className="sticky top-6 space-y-6">
+            
             <div className="rounded-2xl border bg-white p-6 shadow-sm">
               <div className="flex items-end justify-between">
                 <div>
@@ -175,25 +166,23 @@ const PropertyDetail = () => {
                 </span>
               </div>
               <div className="mt-4 grid grid-cols-3 gap-3 text-sm">
-                <div className="rounded-xl border p-3 text-center">
-                  <div className="text-xs text-neutral-500">Price/Sq.ft</div>
-                  <div className="font-semibold">₹ 10,000</div>
-                </div>
-                <div className="rounded-xl border p-3 text-center">
-                  <div className="text-xs text-neutral-500">Status</div>
-                  <div className="font-semibold">Ready</div>
-                </div>
-                <div className="rounded-xl border p-3 text-center">
-                  <div className="text-xs text-neutral-500">Age</div>
-                  <div className="font-semibold">New</div>
-                </div>
+                {[
+                  { label: "Price/Sq.ft", value: "₹ 10,000" },
+                  { label: "Status", value: "Ready" },
+                  { label: "Age", value: "New" }
+                ].map((info, idx) => (
+                  <div key={idx} className="rounded-xl border p-3 text-center">
+                    <div className="text-xs text-neutral-500">{info.label}</div>
+                    <div className="font-semibold">{info.value}</div>
+                  </div>
+                ))}
               </div>
               <div className="mt-5 flex flex-col gap-3">
                 <a
                   href="tel:+919999999999"
                   className="inline-flex items-center justify-center text-lg rounded-xl bg-neutral-900 px-4 py-3 text-white hover:opacity-90"
                 >
-                  Call 
+                  Call
                 </a>
                 <a
                   href="https://wa.me/919999999999"
@@ -209,6 +198,7 @@ const PropertyDetail = () => {
               </p>
             </div>
 
+            
             <div className="rounded-2xl border bg-white p-6 shadow-sm">
               <h3 className="font-semibold mb-3">Property Details</h3>
               <dl className="grid grid-cols-1 gap-2 text-sm">
@@ -225,8 +215,8 @@ const PropertyDetail = () => {
         </aside>
       </section>
 
-      
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    
+      <section className="max-w-7xl mx-auto px-4 lg:px-8 pb-16">
         <h2 className="text-xl font-semibold mb-4">Similar Listings</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[1, 2, 3].map((i) => (
@@ -244,7 +234,7 @@ const PropertyDetail = () => {
                   <span className="text-sm font-medium">₹ 2.75 Cr</span>
                 </div>
                 <p className="mt-1 text-sm text-neutral-600">Vaishali • 2,400 sq.ft • 3 Bath</p>
-                <div className="mt-3 flex gap-2">
+                <div className="mt-3 flex gap-2 flex-wrap">
                   <span className="rounded-full border px-2 py-0.5 text-xs">Ready to move</span>
                   <span className="rounded-full border px-2 py-0.5 text-xs">South facing</span>
                 </div>
