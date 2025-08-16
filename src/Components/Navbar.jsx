@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <div className="flex justify-between items-center px-6 md:px-10 py-4 md:py-6 flex-wrap">
         
-        
+
         <Link
           to="/"
           className="flex items-center gap-2 text-white text-lg md:text-xl font-semibold mb-2 md:mb-0"

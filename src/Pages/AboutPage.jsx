@@ -100,7 +100,7 @@ const AboutPage = () => {
       </div>
 
       
-      <div className="md:w-[95%] bg-black px-4 rounded-full md:py-7  mb-10 md:mx-auto mx-2">
+      <div className="py-3 md:w-[95%] bg-black px-4 rounded-full md:py-7  mb-10 md:mx-auto mx-2">
         <p className="text-white text-center text-xs md:text-4xl font-semibold">
           Eklovya Properties - Your Gateway to Smart and Secure Living.
         </p>
