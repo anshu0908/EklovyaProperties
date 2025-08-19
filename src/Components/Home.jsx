@@ -30,10 +30,8 @@ const Home = () => {
       <div
         className="relative h-[48vw] min-h-[500px] bg-cover bg-center bg-no-repeat bg-[url('https://cdn.prod.website-files.com/67f4e51e5c8ae21dfb2629b0/67f4e9456a9501f92ef078eb_-%20(3).png')] w-full flex items-center justify-center px-4 md:px-6"
       >
-        
         <div className="absolute inset-0 bg-black/50"></div>
 
-        
         <div className="relative z-10 text-white max-w-4xl text-left md:px-2">
           <h1 className="text-3xl md:text-6xl font-semibold leading-snug md:leading-tight">
             Find the right and best <br />
@@ -41,11 +39,10 @@ const Home = () => {
           </h1>
         </div>
 
-       
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-20 w-full px-4">
           <div className="bg-white rounded-2xl shadow-lg px-4 py-4 flex flex-col md:flex-row md:flex-nowrap items-stretch md:items-center gap-4 md:gap-6 max-w-6xl w-full mx-auto">
 
-            
+           
             <div className="flex flex-1 items-center bg-gray-100 px-4 py-2 rounded-full shadow-sm">
               <FaSearch className="text-gray-400 mr-2" />
               <input
@@ -58,10 +55,10 @@ const Home = () => {
               </button>
             </div>
 
-          
+           
             <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap gap-3 justify-between w-full md:w-auto relative">
 
-              
+             
               <div className="relative w-full md:w-auto">
                 <button
                   onClick={() => toggleDropdown("property")}
@@ -86,7 +83,7 @@ const Home = () => {
                 )}
               </div>
 
-             
+              
               <div className="relative w-full md:w-auto">
                 <button
                   onClick={() => toggleDropdown("location")}
@@ -97,8 +94,8 @@ const Home = () => {
                   <span className="text-xs ml-1">▼</span>
                 </button>
                 {openDropdown === "location" && (
-                  <div className="absolute top-full mt-2 left-0 bg-white shadow-md rounded-lg py-2 w-full md:w-40 z-30">
-                    {["Sector 14", "Sector 15", "Sector 17", "Sector 31","Sector 40"].map(
+                  <div className="absolute top-full mt-2 left-0 bg-white shadow-md rounded-lg py-2 w-full md:w-40 z-30 max-h-[150px] overflow-y-auto">
+                    {["Sector 14", "Sector 15", "Sector 17", "Sector 31", "Sector 40"].map(
                       (loc) => (
                         <p
                           key={loc}
@@ -113,7 +110,7 @@ const Home = () => {
                 )}
               </div>
 
-              
+             
               <div className="relative w-full md:w-auto">
                 <button
                   onClick={() => toggleDropdown("type")}
@@ -142,7 +139,6 @@ const Home = () => {
         </div>
       </div>
 
-      
       <Properties />
       <AboutUs />
       <Sectors />
