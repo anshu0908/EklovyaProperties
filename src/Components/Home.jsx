@@ -98,7 +98,7 @@ const Home = () => {
                 </button>
                 {openDropdown === "location" && (
                   <div className="absolute top-full mt-2 left-0 bg-white shadow-md rounded-lg py-2 w-full md:w-40 z-30">
-                    {["Sector 14", "Sector 15", "Sector 17", "Sector 31"].map(
+                    {["Sector 14", "Sector 15", "Sector 17", "Sector 31","Sector 40"].map(
                       (loc) => (
                         <p
                           key={loc}
