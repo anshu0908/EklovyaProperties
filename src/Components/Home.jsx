@@ -50,7 +50,7 @@ const Home = () => {
               <FaSearch className="text-gray-400 mr-2" />
               <input
                 type="text"
-                placeholder="Search for properties..."
+                placeholder="Search for property"
                 className="bg-transparent outline-none w-full text-gray-700 placeholder-gray-400"
               />
               <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-5 py-2 rounded-full whitespace-nowrap ml-2 transition">
