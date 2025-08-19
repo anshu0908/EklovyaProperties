@@ -144,7 +144,7 @@ const Home = () => {
       <Sectors />
       <FAQ />
       <Contact />
-      <PropertyDetail />
+    
     </>
   );
 };
